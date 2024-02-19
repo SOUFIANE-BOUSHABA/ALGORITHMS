@@ -2,8 +2,7 @@
   
 function search(Array $arr, $x) 
 { 
-    $count = count($arr);
-
+    $count = count($arr); 
     if ($count === 0) return false;
       
     for ($low = 0, $high = $count - 1; $low <= $high;) {
@@ -22,7 +21,7 @@ function search(Array $arr, $x)
 
     return false;
 } 
-$arr = array(1, 2,7, 3, 4, 5); 
+$arr = array(1, 2, 7, 9, 3, 4, 5); 
 $x = 7; 
 if(search($arr, $x) == true) { 
     var_dump($arr);
